@@ -1,0 +1,9 @@
+# Datos del cliente (confidenciales)
+Mall Customers.xlsx
+outputs/E2_conjunto_modelado.csv
+outputs/E3_segmentos_clientes.csv
+
+# Temporales
+~$*
+.ipynb_checkpoints/
+__pycache__/

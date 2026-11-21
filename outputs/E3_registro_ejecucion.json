@@ -1,0 +1,32 @@
+{
+  "fecha_ejecucion": "2026-11-21T20:28:32",
+  "version_modelo": "v1.0",
+  "algoritmo": "KMeans",
+  "parametros": {
+    "k": 5,
+    "n_init": 10,
+    "random_state": 42
+  },
+  "variables_entrenamiento": [
+    "Annual Income (k$)",
+    "Spending Score (1-100)"
+  ],
+  "variables_excluidas": [
+    "Gender",
+    "Age",
+    "Education",
+    "Marital Status"
+  ],
+  "n_clientes": 200,
+  "metricas": {
+    "silueta": 0.555,
+    "inercia": 65.57,
+    "segmento_min_pct": 11.0,
+    "cumple_RNF04": true
+  },
+  "entorno": {
+    "python": "3.13.1",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.2"
+  }
+}

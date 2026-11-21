@@ -1,0 +1,8 @@
+,tipo,nulos,valores_unicos,unknown_pct
+CustomerID,int64,0,200,
+Gender,str,0,2,
+Age,int64,0,51,
+Education,str,0,7,13.0
+Marital Status,str,0,4,7.5
+Annual Income (k$),int64,0,64,
+Spending Score (1-100),int64,0,84,
