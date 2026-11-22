@@ -10,18 +10,16 @@ Implementa las fases 2 a 4 de CRISP-DM del plan del EP3: calidad de datos, prepa
 | Archivo | Descripción |
 |---|---|
 | `Parte_A_Segmentacion_KMeans.ipynb` | Notebook con todo el flujo, ya ejecutado |
+| `Mall Customers.xlsx` | Muestra de datos entregada por el cliente (confidencial, ver nota) |
 | `Informe.docx` | Sección de la Parte A del informe |
 | `requirements.txt` | Librerías necesarias |
-| `outputs/` | Resultados agregados: calidad de datos (E2), selección de k, fichas de perfil, gráficos y registro de la ejecución (E3, E4) |
+| `outputs/` | Resultados: calidad de datos (E2), selección de k, fichas de perfil, segmentos por cliente, gráficos y registro de la ejecución (E3, E4) |
 
-## Datos (confidenciales)
+## Nota sobre confidencialidad de los datos
 
-La muestra `Mall Customers.xlsx` fue entregada por el cliente y **no se incluye en este repositorio**. Tampoco se incluyen los archivos con datos por cliente que genera el notebook (`outputs/E2_conjunto_modelado.csv` y `outputs/E3_segmentos_clientes.csv`); se regeneran al ejecutarlo.
+Los datos corresponden a una muestra entregada por el cliente y son confidenciales: en un proyecto real no deben publicarse ni difundirse fuera del equipo. Se incluyen en este repositorio únicamente para efectos de la evaluación académica.
 
 ## Cómo ejecutarlo
-
-1. Copiar `Mall Customers.xlsx` en la misma carpeta que el notebook.
-2. Instalar las librerías y abrir el notebook:
 
 ```
 pip install -r requirements.txt
@@ -35,4 +33,4 @@ El notebook lee `Mall Customers.xlsx` desde su misma carpeta (variable `RUTA_DAT
 - 200 clientes, sin nulos ni duplicados.
 - k = 5: silueta 0,555 y segmento más pequeño de 11 % (cumple RNF04).
 - Segmentos de 22 a 81 clientes.
-- Al ejecutar el notebook se genera `outputs/E3_segmentos_clientes.csv` con `CustomerID` y `Segmento`, que se usa para la auditoría de equidad.
+- `outputs/E3_segmentos_clientes.csv` entrega `CustomerID` y `Segmento` para la auditoría de equidad.
